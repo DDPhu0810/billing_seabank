@@ -1,0 +1,79 @@
+@import '../../../../../node_modules/@angular/material/theming';
+
+@include mat-core();
+
+/* For use in src/lib/core/theming/_palette.scss */
+$md-primary: (
+  50 : #e5e6e9,
+  100 : #bfc1c9,
+  200 : #9498a5,
+  300 : #696e81,
+  400 : #484f66,
+  500 : #28304b,
+  600 : #242b44,
+  700 : #1e243b,
+  800 : #181e33,
+  900 : #0f1323,
+  A100 : #6481ff,
+  A200 : #3158ff,
+  A400 : #002ffd,
+  A700 : #002be4,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+$md-accent: (
+  50 : #e5e6e9,
+  100 : #bfc1c9,
+  200 : #9498a5,
+  300 : #696e81,
+  400 : #484f66,
+  500 : #28304b,
+  600 : #242b44,
+  700 : #1e243b,
+  800 : #181e33,
+  900 : #0f1323,
+  A100 : #6481ff,
+  A200 : #3158ff,
+  A400 : #002ffd,
+  A700 : #002be4,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+//the first two are the custom palettes we declared above
+$md-theme-primary: mat-palette($md-primary);
+$md-theme-accent: mat-palette($md-accent);
+$md-theme-warn: mat-palette($mat-red);
+
+$md-theme: mat-light-theme($md-theme-primary, $md-theme-accent, $md-theme-warn);
+
+@include angular-material-theme($md-theme);
