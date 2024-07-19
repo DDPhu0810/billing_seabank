@@ -1,0 +1,9 @@
+[Unit]
+Description = Billing Service
+After = network.target
+
+[Service]
+ExecStart = /opt/billing/billing_core/run.sh
+
+[Install]
+WantedBy = multi-user.target

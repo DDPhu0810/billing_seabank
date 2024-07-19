@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}">
+    <head>
+        <title>V/v Áp dụng mã code cho cuộc gọi ra ngoài trên điện thoại IPphone</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+		<p style="font-family:arial; font-size:10pt">
+            Kính gửi anh/chị,
+		</p>
+		<p th:text="#{email.changecode.code(${facode})}" style="font-family:arial; font-size:10pt">
+			Mã Code gọi ra mạng di động, cố định của anh/chị là
+		</p>
+		<p style="font-family:arial; font-size:10pt">
+			Thời gian áp dụng Code bắt đầu từ 10/09/2020
+		</p>
+		<p style="font-family:arial; font-size:10pt">
+            Anh/chị vui lòng thực hiện theo hướng dẫn khi cần sử dụng:
+		</p>
+		<ul style="list-style-type:disc">
+			<li style="font-family:arial; font-size:10pt; font-weight:bold">
+					Bước 1: Bấm 0 (đối với gọi trong nước), bấm 000 (đối với gọi quốc
+					tế) rồi bấm số cần gọi.
+			</li>
+			<li style="font-family:arial; font-size:10pt;font-weight:bold">
+				Bước 2:Trên màn hình điện thoại sẽ hiển thị:
+			</li>
+			<p style="font-family:arial; font-size:10pt; margin-left:50px">
+			Enter Authorization Code
+		</p>
+			<li style="font-family:arial; font-size:10pt;font-weight:bold">
+				<strong>
+					Bước 3: Anh/chị vui lòng nhập mã code **** và kết thúc bằng phím #.
+				</strong>
+			</li>
+		</ul>
+		<p style="font-family:arial; font-size:10pt">
+			Để được hỗ trợ thêm anh/chị vui lòng gọi 1991 hoặc IT chi nhánh, Phòng giao
+			dịch.
+		</p>
+		<p style="font-family:arial; font-size:10pt">
+			Các hướng dẫn sử dụng điện thoại đã được Bộ phận IT gửi email cho anh/chị.
+			Anh/chị cũng có thể truy cập
+			<a href="http://itservices.ssi/internaluserguide.html" target="_blank">
+				tại đây
+			</a>
+			để tải lại các hướng dẫn sử dụng.
+		</p>
+		<p style="font-family:arial; font-size:10pt">
+            Bộ phận IT kính chúc anh/chị một ngày làm việc hiệu quả.
+		</p>
+		<p style="font-family:arial; font-size:10pt">
+			Trân trọng,
+		</p>
+		<br/>
+    </body>
+</html>
